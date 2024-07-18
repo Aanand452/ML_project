@@ -1,0 +1,13 @@
+prefix=/Users/apple/Downloads/Ml_Project/ML_project/new
+exec_prefix=/Users/apple/Downloads/Ml_Project/ML_project/new
+libdir=/Users/apple/Downloads/Ml_Project/ML_project/new/lib
+sharedlibdir=/Users/apple/Downloads/Ml_Project/ML_project/new/lib
+includedir=/Users/apple/Downloads/Ml_Project/ML_project/new/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
