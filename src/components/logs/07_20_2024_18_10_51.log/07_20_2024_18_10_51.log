@@ -1,0 +1,8 @@
+[2024-07-20 18:10:52,374] 24 root - INFO - data ingestion initiated
+[2024-07-20 18:10:52,386] 26 root - INFO - Entered the data ingestion method or component
+[2024-07-20 18:10:52,426] 29 root - INFO - Train test split initiated
+[2024-07-20 18:10:52,465] 36 root - INFO - Ingestion of data is completed
+[2024-07-20 18:10:52,480] 271 root - INFO - Data transformation initiated
+[2024-07-20 18:10:52,480] 352 root - INFO - Splitting training data into features and target
+[2024-07-20 18:10:52,480] 356 root - INFO - Splitting testing data into features and target
+[2024-07-20 18:14:27,633] 170 root - INFO - Best model found, Model Name is Logistic Regression, Best model score is 0.7833435771358328

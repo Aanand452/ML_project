@@ -7,7 +7,7 @@ from src.exception import CustomException
 from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
 from src.components.data_transformation import get_data_transformation
-
+from src.components.model_trainer import ModelTrainer
 @dataclass
 class DataIngestionConfig:
     train_data_path = os.path.join("artifacts/data_ingestion","train.csv")
@@ -50,6 +50,9 @@ if __name__ == "__main__":
     
     data_transformation = get_data_transformation()
     train_array,test_array, _=  data_transformation.initialize_data_transformation(train_data_path,test_data_path)
+    
+    modeltrainer = ModelTrainer()
+    print(modeltrainer.initiate_model_trainer(train_array,test_array))
     
     
         
