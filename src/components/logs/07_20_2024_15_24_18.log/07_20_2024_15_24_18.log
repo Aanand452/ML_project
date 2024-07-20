@@ -1,0 +1,42 @@
+[2024-07-20 15:24:18,988] 24 root - INFO - data ingestion initiated
+[2024-07-20 15:24:18,998] 26 root - INFO - Entered the data ingestion method or component
+[2024-07-20 15:24:19,036] 29 root - INFO - Train test split initiated
+[2024-07-20 15:24:19,075] 36 root - INFO - Ingestion of data is completed
+[2024-07-20 15:24:19,092] 29 root - INFO - Data transformation initiated
+[2024-07-20 15:24:19,092] 103 root - INFO - Splitting training data into features and target
+[2024-07-20 15:24:19,092] 107 root - INFO - Splitting testing data into features and target
+[2024-07-20 15:24:19,093] 123 root - ERROR - Error in initialize_data_transformation method: A given column is not a column of the dataframe
+Traceback (most recent call last):
+  File "/Users/apple/Downloads/Ml_Project/ML_project/new/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'education'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/apple/Downloads/Ml_Project/ML_project/new/lib/python3.9/site-packages/sklearn/utils/_indexing.py", line 361, in _get_column_indices
+    col_idx = all_columns.get_loc(col)
+  File "/Users/apple/Downloads/Ml_Project/ML_project/new/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'education'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/apple/Downloads/Ml_Project/ML_project/src/components/data_transformation.py", line 112, in initialize_data_transformation
+    input_feature_train_arr = preprocessor_obj.fit_transform(input_feature_train_df)
+  File "/Users/apple/Downloads/Ml_Project/ML_project/new/lib/python3.9/site-packages/sklearn/utils/_set_output.py", line 313, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/Users/apple/Downloads/Ml_Project/ML_project/new/lib/python3.9/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "/Users/apple/Downloads/Ml_Project/ML_project/new/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py", line 968, in fit_transform
+    self._validate_column_callables(X)
+  File "/Users/apple/Downloads/Ml_Project/ML_project/new/lib/python3.9/site-packages/sklearn/compose/_column_transformer.py", line 536, in _validate_column_callables
+    transformer_to_input_indices[name] = _get_column_indices(X, columns)
+  File "/Users/apple/Downloads/Ml_Project/ML_project/new/lib/python3.9/site-packages/sklearn/utils/_indexing.py", line 369, in _get_column_indices
+    raise ValueError("A given column is not a column of the dataframe") from e
+ValueError: A given column is not a column of the dataframe

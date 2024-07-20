@@ -1,0 +1,5 @@
+[2024-07-20 14:45:27,983] 24 root - INFO - data ingestion initiated
+[2024-07-20 14:45:27,993] 26 root - INFO - Entered the data ingestion method or component
+[2024-07-20 14:45:28,031] 29 root - INFO - Train test split initiated
+[2024-07-20 14:45:28,070] 36 root - INFO - Ingestion of data is completed
+[2024-07-20 14:45:28,079] 75 root - INFO - Outliers handling code

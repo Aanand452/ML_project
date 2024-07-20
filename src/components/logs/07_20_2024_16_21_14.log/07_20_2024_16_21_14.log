@@ -1,0 +1,10 @@
+[2024-07-20 16:21:15,156] 24 root - INFO - data ingestion initiated
+[2024-07-20 16:21:15,167] 26 root - INFO - Entered the data ingestion method or component
+[2024-07-20 16:21:15,204] 29 root - INFO - Train test split initiated
+[2024-07-20 16:21:15,243] 36 root - INFO - Ingestion of data is completed
+[2024-07-20 16:21:15,251] 340 root - WARNING - Missing columns in DataFrame: ['hours.per.week', 'education', 'native.country']
+[2024-07-20 16:21:15,251] 372 root - ERROR - Error in initialize_data_transformation method: Missing columns in DataFrame: ['hours.per.week', 'education', 'native.country']
+Traceback (most recent call last):
+  File "/Users/apple/Downloads/Ml_Project/ML_project/src/components/data_transformation.py", line 341, in initialize_data_transformation
+    raise CustomException(f"Missing columns in DataFrame: {missing_columns}", sys)
+src.exception.CustomException: Missing columns in DataFrame: ['hours.per.week', 'education', 'native.country']

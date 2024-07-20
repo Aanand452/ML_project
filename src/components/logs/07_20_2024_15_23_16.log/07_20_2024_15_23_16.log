@@ -1,0 +1,19 @@
+[2024-07-20 15:23:17,303] 24 root - INFO - data ingestion initiated
+[2024-07-20 15:23:17,329] 26 root - INFO - Entered the data ingestion method or component
+[2024-07-20 15:23:17,373] 29 root - INFO - Train test split initiated
+[2024-07-20 15:23:17,417] 36 root - INFO - Ingestion of data is completed
+[2024-07-20 15:23:17,433] 29 root - INFO - Data transformation initiated
+[2024-07-20 15:23:17,433] 123 root - ERROR - Error in initialize_data_transformation method: __init__() got an unexpected keyword argument 'sparse'
+Traceback (most recent call last):
+  File "/Users/apple/Downloads/Ml_Project/ML_project/src/components/data_transformation.py", line 48, in get_data_transformation_object
+    ("one_hot_encoder", OneHotEncoder(handle_unknown='ignore', sparse=False))
+TypeError: __init__() got an unexpected keyword argument 'sparse'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/apple/Downloads/Ml_Project/ML_project/src/components/data_transformation.py", line 98, in initialize_data_transformation
+    preprocessor_obj = self.get_data_transformation_object()
+  File "/Users/apple/Downloads/Ml_Project/ML_project/src/components/data_transformation.py", line 62, in get_data_transformation_object
+    raise CustomException(e, sys)
+src.exception.CustomException: __init__() got an unexpected keyword argument 'sparse'

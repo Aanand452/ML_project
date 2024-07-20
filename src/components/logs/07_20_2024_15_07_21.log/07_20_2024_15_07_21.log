@@ -1,0 +1,23 @@
+[2024-07-20 15:07:21,834] 24 root - INFO - data ingestion initiated
+[2024-07-20 15:07:21,844] 26 root - INFO - Entered the data ingestion method or component
+[2024-07-20 15:07:21,882] 29 root - INFO - Train test split initiated
+[2024-07-20 15:07:21,921] 36 root - INFO - Ingestion of data is completed
+[2024-07-20 15:07:21,934] 81 root - ERROR - KeyError in remove_outliers: "Column 'hours.per.week' not found in DataFrame"
+Traceback (most recent call last):
+  File "/Users/apple/Downloads/Ml_Project/ML_project/src/components/data_transformation.py", line 67, in remove_outliers
+    raise KeyError(f"Column '{columns}' not found in DataFrame")
+KeyError: "Column 'hours.per.week' not found in DataFrame"
+[2024-07-20 15:07:21,934] 123 root - ERROR - Error in initialize_data_transformation method: "Column 'hours.per.week' not found in DataFrame"
+Traceback (most recent call last):
+  File "/Users/apple/Downloads/Ml_Project/ML_project/src/components/data_transformation.py", line 67, in remove_outliers
+    raise KeyError(f"Column '{columns}' not found in DataFrame")
+KeyError: "Column 'hours.per.week' not found in DataFrame"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/apple/Downloads/Ml_Project/ML_project/src/components/data_transformation.py", line 95, in initialize_data_transformation
+    train_df = self.remove_outliers(column, train_df)
+  File "/Users/apple/Downloads/Ml_Project/ML_project/src/components/data_transformation.py", line 82, in remove_outliers
+    raise CustomException(e, sys)
+src.exception.CustomException: "Column 'hours.per.week' not found in DataFrame"

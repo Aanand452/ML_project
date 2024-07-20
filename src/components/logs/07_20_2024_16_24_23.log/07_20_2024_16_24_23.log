@@ -1,0 +1,7 @@
+[2024-07-20 16:24:24,450] 24 root - INFO - data ingestion initiated
+[2024-07-20 16:24:24,460] 26 root - INFO - Entered the data ingestion method or component
+[2024-07-20 16:24:24,498] 29 root - INFO - Train test split initiated
+[2024-07-20 16:24:24,537] 36 root - INFO - Ingestion of data is completed
+[2024-07-20 16:24:24,552] 271 root - INFO - Data transformation initiated
+[2024-07-20 16:24:24,552] 352 root - INFO - Splitting training data into features and target
+[2024-07-20 16:24:24,552] 356 root - INFO - Splitting testing data into features and target

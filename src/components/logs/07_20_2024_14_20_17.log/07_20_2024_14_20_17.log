@@ -1,0 +1,4 @@
+[2024-07-20 14:20:17,637] 24 root - INFO - data ingestion initiated
+[2024-07-20 14:20:17,647] 26 root - INFO - Entered the data ingestion method or component
+[2024-07-20 14:20:17,690] 29 root - INFO - Train test split initiated
+[2024-07-20 14:20:17,729] 36 root - INFO - Ingestion of data is completed

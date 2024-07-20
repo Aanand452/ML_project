@@ -1,0 +1,19 @@
+[2024-07-20 16:17:15,132] 24 root - INFO - data ingestion initiated
+[2024-07-20 16:17:15,141] 26 root - INFO - Entered the data ingestion method or component
+[2024-07-20 16:17:15,179] 29 root - INFO - Train test split initiated
+[2024-07-20 16:17:15,218] 36 root - INFO - Ingestion of data is completed
+[2024-07-20 16:17:15,228] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,228] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,230] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,230] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,231] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,233] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,234] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,235] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,236] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,237] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,238] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,239] 212 root - INFO - Outliers removed
+[2024-07-20 16:17:15,239] 153 root - INFO - Data transformation initiated
+[2024-07-20 16:17:15,239] 219 root - INFO - Splitting training data into dependent and target feature
+[2024-07-20 16:17:15,239] 223 root - INFO - Splitting testing data into dependent and target feature
