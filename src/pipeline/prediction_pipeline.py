@@ -13,7 +13,7 @@ import numpy as np
 from dataclasses import dataclass 
 from src.utils import load_object
 
-class PreductionPipelineConfig:
+class PredictionPipelineConfig:
     def __init__(self):
         pass 
     
