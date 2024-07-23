@@ -31,3 +31,6 @@ steps:
 images:
 - 'gcr.io/prediction-430300/prediction.v1'
 
+options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
+
