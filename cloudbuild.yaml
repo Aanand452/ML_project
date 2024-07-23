@@ -2,7 +2,7 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/prediction-430300/prediction.v1', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/[prediction-430300/prediction.v1']
+  args: ['push', 'gcr.io/prediction-430300/prediction.v1']
 
 # Authenticate kubectl with your GKE cluster
 - name: 'gcr.io/cloud-builders/gcloud'
@@ -11,13 +11,26 @@ steps:
   - '-c'
   - |
     gcloud container clusters get-credentials new-prediction --zone us-east1-b --project prediction-430300
+  env:
+  - 'CLOUDSDK_COMPUTE_REGION=us-east1'
+  - 'CLOUDSDK_COMPUTE_ZONE=us-east1-b'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=new-prediction'
 
 # Apply Kubernetes deployment and service configurations
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'k8s/deployment.yaml']
+  env:
+  - 'CLOUDSDK_COMPUTE_REGION=us-east1'
+  - 'CLOUDSDK_COMPUTE_ZONE=us-east1-b'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=new-prediction'
 
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'k8s/service.yaml']
+  env:
+  - 'CLOUDSDK_COMPUTE_REGION=us-east1'
+  - 'CLOUDSDK_COMPUTE_ZONE=us-east1-b'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=new-prediction'
 
 images:
 - 'gcr.io/prediction-430300/prediction.v1'
+
